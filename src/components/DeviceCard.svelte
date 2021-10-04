@@ -43,6 +43,7 @@
     transition: opacity 0.3s;
     opacity: 0.6;
     cursor: pointer;
+    display: none;
 
     &:hover {
       opacity: 1;
@@ -52,7 +53,7 @@
 
 <Card>
   <CardHeader>
-    <i on:click={dispatch('edit', device)} class="icon icon-edit float-right" />
+    <i on:click={dispatch('edit', device)} class="icon icon-edit float-right"/>
     <CardTitle>{device.name}</CardTitle>
     <CardSubtitle classNames={online && 'text-success'}>
       {online ? 'Online' : 'Offline'}

@@ -144,7 +144,7 @@
             <DeviceCard {device} on:edit={handleEditRequest} />
           </div>
         {/each}
-        <div class="column col-3">
+        <div class="column col-3" style="display:none">
           <Card>
             <div
               class="empty"
