@@ -15,5 +15,5 @@ COPY . .
 RUN yarn build && mkdir -p /app && mv node_modules __sapper__ package.json data static /app && rm -rf /tmp/build
 
 WORKDIR /app
-EXPOSE 3000
+ENV PORT 80
 CMD [ "node", "__sapper__/build" ]
