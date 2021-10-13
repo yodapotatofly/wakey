@@ -98,7 +98,7 @@
 
   .columns {
     .column {
-      padding-bottom: 0.8rem;
+      padding-bottom: 0.4rem;
     }
   }
 
@@ -140,11 +140,11 @@
     {:else}
       <div class="columns">
         {#each combinedData as device}
-          <div class="column col-3">
+          <div class="column col-2">
             <DeviceCard {device} on:edit={handleEditRequest} />
           </div>
         {/each}
-        <div class="column col-3" style="display:none">
+        <div class="column col-2" style="display:none">
           <Card>
             <div
               class="empty"
